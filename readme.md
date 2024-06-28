@@ -74,8 +74,6 @@ Browse the categories to find the functions you need. Each category contains a s
 | `sanitize_email()`           | Sanitizes an email address.                                                                    | `$email` (string)                   |
 | `is_wp_error()`              | Checks if a variable is a WP_Error object.                                                      | `$thing` (mixed)                    |
 | `wp_parse_args()`            | Merge user defined arguments into defaults array.                                                | `$args` (mixed
-
-
 | **Sanitization Functions**   |                                                                                                 |                                      |
 | `esc_html()`                 | Escapes HTML for safe output.                                                                    | `$text` (string)                     |
 | `esc_attr()`                 | Escapes an attribute value for safe output.                                                      | `$text` (string)                     |
