@@ -18,6 +18,18 @@ Browse the categories to find the functions you need. Each category contains a s
 | `esc_attr()`                 | Escapes text for use in an HTML attribute.                                                      | `$text` (string)                     |
 | `esc_url()`                  | Escapes a URL for use in HTML attributes or redirects.                                          | `$url` (string)                      |
 | `current_time()`             | Retrieves the current time based on specified type.                                              | `$type` (string), `$gmt` (bool)      |
+| **Sanitization Functions**   |                                                                                                 |                                      |
+| `esc_html()`                 | Escapes HTML for safe output.                                                                    | `$text` (string)                     |
+| `esc_attr()`                 | Escapes an attribute value for safe output.                                                      | `$text` (string)                     |
+| `esc_url()`                  | Escapes a URL for safe output.                                                                   | `$url` (string)                      |
+| `esc_textarea()`             | Escapes a textarea string for safe output.                                                       | `$text` (string)                     |
+| `sanitize_text_field()`      | Sanitizes a string from user input or from the database.                                          | `$str` (string)                      |
+| `sanitize_email()`           | Sanitizes an email address.                                                                      | `$email` (string)                    |
+| `sanitize_file_name()`       | Sanitizes a filename replacing whitespace and a few other characters with dashes.                | `$filename` (string)                 |
+| `wp_kses_post()`             | Sanitizes content for allowed HTML tags for post content.                                         | `$data` (string)                     |
+| `wp_filter_post_kses()`      | Sanitizes content for allowed HTML tags for post content, applying filters.                       | `$data` (string)                     |
+| `wp_kses_data()`             | Sanitizes content for allowed HTML tags for general content.                                       | `$data` (string)                     |
+| `wp_kses()`                  | Sanitizes content for allowed HTML tags, based on context.                                        | `$data` (string), `$allowed_html` (array) |
 | **Validation Functions**     |                                                                                                 |                                      |
 | `is_email()`                 | Validates an email address.                                                                     | `$email` (string)                    |
 | `is_user_logged_in()`        | Checks if the current visitor is a logged-in user.                                              | None                                 |
