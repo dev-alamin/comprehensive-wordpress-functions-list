@@ -21,7 +21,7 @@ Browse the categories to find the functions you need. Each category contains a s
 # General Functions
 
 ```<?php
-get_template_directory() ?>
+get_template_directory();
 ```
 **Description:** Retrieves the absolute path to the template directory.  
 **Parameters:** None  
