@@ -18,7 +18,6 @@ Browse the categories to find the functions you need. Each category contains a s
 | `esc_attr()`                 | Escapes text for use in an HTML attribute.                                                      | `$text` (string)                     |
 | `esc_url()`                  | Escapes a URL for use in HTML attributes or redirects.                                          | `$url` (string)                      |
 | `current_time()`             | Retrieves the current time based on specified type.                                              | `$type` (string), `$gmt` (bool)      |
-
 | **Validation Functions**     |                                                                                                 |                                      |
 | `is_email()`                 | Validates an email address.                                                                     | `$email` (string)                    |
 | `is_user_logged_in()`        | Checks if the current visitor is a logged-in user.                                              | None                                 |
@@ -39,7 +38,6 @@ Browse the categories to find the functions you need. Each category contains a s
 | `is_multisite()`             | Determines if Multisite is enabled.                                                             | None                                 |
 | `is_main_site()`             | Determines if the current site is the main site.                                                | `$site_id` (int|null)                |
 | `wp_validate_boolean()`      | Validates a boolean variable.                                                                   | `$value` (mixed)                     |
-
 | **Filters**                  |                                                                                                 |                                      |
 | `the_title`                  | Filters the post title.                                                                         | `$title` (string), `$id` (int)       |
 | `the_content`                | Filters the post content.                                                                       | `$content` (string)                  |
@@ -66,7 +64,6 @@ Browse the categories to find the functions you need. Each category contains a s
 | `widget_text`                | Filters the content of the text widget.                                                         | `$text` (string), `$instance` (array) |
 | `wp_generate_attachment_metadata` | Filters the attachment meta data.                                                            | `$metadata` (array), `$attachment_id` (int) |
 | `term_links-post_tag`        | Filters the term links for the post tags.                                                       | `$term_links` (array), `$taxonomy` (string) |
-
 | **Actions**                  |                                                                                                 |                                      |
 | `init`                       | Fires after WordPress has finished loading but before any headers are sent.                      | None                                 |
 | `wp_enqueue_scripts`         | Fires when scripts and styles are enqueued.                                                      | None                                 |
@@ -112,7 +109,6 @@ Browse the categories to find the functions you need. Each category contains a s
 | `wp_scheduled_delete`        | Fires when WordPress's scheduled task for deleting old trash posts runs.                         | None                                 |
 | `clean_post_cache`           | Fires immediately after the post's cache is cleaned.                                             | `$post_id` (int)                     |
 | `save_post_{post_type}`      | Fires when a post of a specific post type is updated.                                            | `$post_id` (int), `$post` (WP_Post), `$update` (bool) |
-
 
 ## Contribution
 Feel free to contribute by adding new functions or improving existing ones. Please follow the contribution guidelines in `CONTRIBUTING.md`.
