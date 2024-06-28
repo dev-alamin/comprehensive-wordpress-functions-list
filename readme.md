@@ -177,6 +177,42 @@ Browse the categories to find the functions you need. Each category contains a s
 | `wp_scheduled_delete`        | Fires when WordPress's scheduled task for deleting old trash posts runs.                         | None                                 |
 | `clean_post_cache`           | Fires immediately after the post's cache is cleaned.                                             | `$post_id` (int)                     |
 | `save_post_{post_type}`      | Fires when a post of a specific post type is updated.                                            | `$post_id` (int), `$post` (WP_Post), `$update` (bool) |
+| **Database Functions**       |                                                                                                 |                                      |
+| `get_post()`                 | Retrieves post data.                                                                            | `$post` (int|WP_Post|object)         |
+| `get_posts()`                | Retrieves an array of posts based on query parameters.                                           | `$args` (array)                     |
+| `get_page_by_title()`        | Retrieves a post or page ID given its title.                                                     | `$page_title` (string), `$output` (string) |
+| `get_page_by_path()`         | Retrieves a post or page ID given its path.                                                      | `$page_path` (string), `$output` (string) |
+| `get_pages()`                | Retrieves an array of pages based on query parameters.                                            | `$args` (array)                     |
+| `get_post_meta()`            | Retrieves post meta data.                                                                       | `$post_id` (int), `$key` (string), `$single` (bool) |
+| `update_post_meta()`         | Updates post meta data.                                                                         | `$post_id` (int), `$meta_key` (string), `$meta_value` (mixed), `$prev_value` (mixed) |
+| `delete_post_meta()`         | Deletes post meta data.                                                                         | `$post_id` (int), `$meta_key` (string), `$meta_value` (mixed) |
+| `add_post_meta()`            | Adds post meta data.                                                                            | `$post_id` (int), `$meta_key` (string), `$meta_value` (mixed), `$unique` (bool) |
+| `get_term()`                 | Retrieves term data.                                                                            | `$term` (int|string|object), `$taxonomy` (string), `$output` (string) |
+| `get_terms()`                | Retrieves an array of terms based on query parameters.                                            | `$args` (array)                     |
+| `get_taxonomy()`             | Retrieves taxonomy data.                                                                        | `$taxonomy` (string)                |
+| `wp_insert_term()`           | Inserts a new term into the database.                                                           | `$term` (string), `$taxonomy` (string), `$args` (array) |
+| `wp_update_term()`           | Updates an existing term in the database.                                                        | `$term_id` (int), `$taxonomy` (string), `$args` (array) |
+| `wp_delete_term()`           | Deletes a term from the database.                                                                | `$term_id` (int), `$taxonomy` (string), `$args` (array) |
+| `term_exists()`              | Checks if a term exists.                                                                        | `$term` (string), `$taxonomy` (string), `$parent` (int) |
+| `get_user_by()`              | Retrieve a user object by one of the parameters.                                                 | `$field` (string), `$value` (string) |
+| `get_userdata()`             | Retrieve user data by user ID.                                                                  | `$user_id` (int)                    |
+| `get_user_meta()`            | Retrieve user meta data.                                                                        | `$user_id` (int), `$key` (string), `$single` (bool) |
+| `update_user_meta()`         | Update user meta data.                                                                          | `$user_id` (int), `$meta_key` (string), `$meta_value` (mixed), `$prev_value` (mixed) |
+| `delete_user_meta()`         | Delete user meta data.                                                                          | `$user_id` (int), `$meta_key` (string), `$meta_value` (mixed) |
+| `add_user_meta()`            | Add user meta data.                                                                             | `$user_id` (int), `$meta_key` (string), `$meta_value` (mixed), `$unique` (bool) |
+| `wp_insert_user()`           | Insert a new user into the database.                                                            | `$userdata` (array)                 |
+| `wp_update_user()`           | Update a user in the database.                                                                  | `$userdata` (array)                 |
+| `wp_delete_user()`           | Delete a user from the database.                                                                | `$user_id` (int), `$reassign` (int|null) |
+| `wpdb::get_results()`        | Retrieves an array of objects from the database query.                                           | `$query` (string), `$output_type` (string) |
+| `wpdb::get_row()`            | Retrieves one row from the database query.                                                       | `$query` (string), `$output_type` (string) |
+| `wpdb::get_col()`            | Retrieves one column from the database query.                                                    | `$query` (string), `$column_offset` (int) |
+| `wpdb::get_var()`            | Retrieves one variable from the database query.                                                  | `$query` (string), `$column_offset` (int) |
+| `wpdb::query()`              | Performs a MySQL database query on the WordPress database.                                       | `$query` (string)                   |
+| `wpdb::prepare()`            | Prepares a SQL query for safe execution.                                                         | `$query` (string), `$args` (mixed)   |
+| `wpdb::insert()`             | Inserts a row into a table.                                                                     | `$table` (string), `$data` (array), `$format` (array) |
+| `wpdb::update()`             | Updates a row in a table.                                                                       | `$table` (string), `$data` (array), `$where` (array), `$format` (array), `$where_format` (array) |
+| `wpdb::delete()`             | Deletes a row in a table.                                                                       | `$table` (string), `$where` (array), `$where_format` (array) |
 
+These functions cover a wide range of operations related to posts, pages, terms, users, and direct database interactions commonly used in WordPress theme development.
 ## Contribution
 Feel free to contribute by adding new functions or improving existing ones. Please follow the contribution guidelines in `CONTRIBUTING.md`.
