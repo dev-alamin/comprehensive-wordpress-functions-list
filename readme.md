@@ -19,151 +19,394 @@ Browse the categories to find the functions you need. Each category contains a s
 ### general-functions.md
 
 # General Functions
+Certainly! Here's how you can format your markdown file to present each function as a code block with its description and parameters:
 
-```<?php
+```markdown
+## get_template_directory()
+
+```php
+<?php
+// Retrieves the absolute path to the template directory.
 get_template_directory();
+?>
 ```
 **Description:** Retrieves the absolute path to the template directory.  
 **Parameters:** None  
 
+---
+
 ## get_stylesheet_directory()
+
+```php
+<?php
+// Retrieves the absolute path to the stylesheet directory.
+get_stylesheet_directory();
+?>
+```
 **Description:** Retrieves the absolute path to the stylesheet directory.  
 **Parameters:** None  
 
+---
+
 ## get_template_directory_uri()
+
+```php
+<?php
+// Retrieves the URI of the template directory.
+get_template_directory_uri();
+?>
+```
 **Description:** Retrieves the URI of the template directory.  
 **Parameters:** None  
 
+---
+
 ## get_stylesheet_directory_uri()
+
+```php
+<?php
+// Retrieves the URI of the stylesheet directory.
+get_stylesheet_directory_uri();
+?>
+```
 **Description:** Retrieves the URI of the stylesheet directory.  
 **Parameters:** None  
 
+---
+
 ## get_home_url($blog_id = null, $path = '', $scheme = null)
+
+```php
+<?php
+// Retrieves the home URL for the current site.
+get_home_url($blog_id = null, $path = '', $scheme = null);
+?>
+```
 **Description:** Retrieves the home URL for the current site.  
 **Parameters:**  
 - `$blog_id` (int) Optional. Site ID. Default null.  
 - `$path` (string) Optional. Path relative to the home URL. Default ''.  
 - `$scheme` (string|null) Optional. Scheme to give the home URL context. Accepts 'http', 'https', or 'relative'. Default null.  
 
+---
+
 ## get_site_url($blog_id = null, $path = '', $scheme = null)
+
+```php
+<?php
+// Retrieves the site URL for the current site.
+get_site_url($blog_id = null, $path = '', $scheme = null);
+?>
+```
 **Description:** Retrieves the site URL for the current site.  
 **Parameters:**  
 - `$blog_id` (int) Optional. Site ID. Default null.  
 - `$path` (string) Optional. Path relative to the site URL. Default ''.  
 - `$scheme` (string|null) Optional. Scheme to give the site URL context. Accepts 'http', 'https', or 'relative'. Default null.  
 
+---
+
 ## get_admin_url($blog_id = null, $path = '', $scheme = 'admin')
+
+```php
+<?php
+// Retrieves the admin URL for the current site.
+get_admin_url($blog_id = null, $path = '', $scheme = 'admin');
+?>
+```
 **Description:** Retrieves the admin URL for the current site.  
 **Parameters:**  
 - `$blog_id` (int) Optional. Site ID. Default null.  
 - `$path` (string) Optional. Path relative to the admin URL. Default ''.  
 - `$scheme` (string) Optional. Scheme to give the admin URL context. Default 'admin'.  
 
+---
+
 ## site_url($path = '', $scheme = null)
+
+```php
+<?php
+// Retrieves the site URL.
+site_url($path = '', $scheme = null);
+?>
+```
 **Description:** Retrieves the site URL.  
 **Parameters:**  
 - `$path` (string) Optional. Path relative to the site URL. Default ''.  
 - `$scheme` (string|null) Optional. Scheme to give the site URL context. Accepts 'http', 'https', or 'relative'. Default null.  
 
+---
+
 ## home_url($path = '', $scheme = null)
+
+```php
+<?php
+// Retrieves the home URL.
+home_url($path = '', $scheme = null);
+?>
+```
 **Description:** Retrieves the home URL.  
 **Parameters:**  
 - `$path` (string) Optional. Path relative to the home URL. Default ''.  
 - `$scheme` (string|null) Optional. Scheme to give the home URL context. Accepts 'http', 'https', or 'relative'. Default null.  
 
+---
+
 ## admin_url($path = '', $scheme = 'admin')
+
+```php
+<?php
+// Retrieves the admin URL.
+admin_url($path = '', $scheme = 'admin');
+?>
+```
 **Description:** Retrieves the admin URL.  
 **Parameters:**  
 - `$path` (string) Optional. Path relative to the admin URL. Default ''.  
 - `$scheme` (string) Optional. Scheme to give the admin URL context. Default 'admin'.  
 
+---
+
 ## includes_url($path = '', $scheme = null)
+
+```php
+<?php
+// Retrieves the URL to the includes directory.
+includes_url($path = '', $scheme = null);
+?>
+```
 **Description:** Retrieves the URL to the includes directory.  
 **Parameters:**  
 - `$path` (string) Optional. Path relative to the includes URL. Default ''.  
 - `$scheme` (string|null) Optional. Scheme to give the includes URL context. Accepts 'http', 'https', or 'relative'. Default null.  
 
+---
+
 ## content_url($path = '')
+
+```php
+<?php
+// Retrieves the URL to the content directory.
+content_url($path = '');
+?>
+```
 **Description:** Retrieves the URL to the content directory.  
 **Parameters:**  
 - `$path` (string) Optional. Path relative to the content URL. Default ''.  
 
+---
+
 ## plugins_url($path = '', $plugin = '')
+
+```php
+<?php
+// Retrieves the URL to the plugins directory or to a specific plugin.
+plugins_url($path = '', $plugin = '');
+?>
+```
 **Description:** Retrieves the URL to the plugins directory or to a specific plugin.  
 **Parameters:**  
 - `$path` (string) Optional. Path relative to the plugins URL. Default ''.  
 - `$plugin` (string) Optional. The plugin file path to be relative to. Default ''.  
 
+---
+
 ## wp_upload_dir($time = null, $create_dir = true, $refresh_cache = false)
+
+```php
+<?php
+// Retrieves an array containing the current upload directory's path and URL.
+wp_upload_dir($time = null, $create_dir = true, $refresh_cache = false);
+?>
+```
 **Description:** Retrieves an array containing the current upload directory's path and URL.  
 **Parameters:**  
 - `$time` (string|int|null) Optional. Time to determine the upload subdirectory. Default null.  
 - `$create_dir` (bool) Optional. Whether to check and create the uploads directory. Default true.  
 - `$refresh_cache` (bool) Optional. Whether to refresh the cache. Default false.  
 
+---
+
 ## get_the_ID()
+
+```php
+<?php
+// Retrieves the ID of the current item in the WordPress Loop.
+get_the_ID();
+?>
+```
 **Description:** Retrieves the ID of the current item in the WordPress Loop.  
 **Parameters:** None  
 
+---
+
 ## get_the_title($post = 0)
-**Description:** Retrieves the title of the current post.  
+
+```php
+<?php
+// Retrieves the title of a specified post.
+get_the_title($post = 0);
+?>
+```
+**Description:** Retrieves the title of a specified post.  
 **Parameters:**  
 - `$post` (int|WP_Post) Optional. Post ID or post object. Default 0.  
+
+---
 
 ## get_the_permalink($post = 0)
-**Description:** Retrieves the permalink for the current post.  
+
+```php
+<?php
+// Retrieves the permalink for a specified post.
+get_the_permalink($post = 0);
+?>
+```
+**Description:** Retrieves the permalink for a specified post.  
 **Parameters:**  
 - `$post` (int|WP_Post) Optional. Post ID or post object. Default 0.  
 
+---
+
 ## the_content($more_link_text = null, $strip_teaser = false)
-**Description:** Displays the post content.  
+
+```php
+<?php
+// Displays the content of the current post.
+the_content($more_link_text = null, $strip_teaser = false);
+?>
+```
+**Description:** Displays the content of the current post.  
 **Parameters:**  
 - `$more_link_text` (string|null) Optional. Content for when there is more text. Default null.  
 - `$strip_teaser` (bool) Optional. Whether to strip the teaser content before the more text. Default false.  
+
+---
 
 ## get_the_content($more_link_text = null, $strip_teaser = false)
-**Description:** Retrieves the post content.  
+
+```php
+<?php
+// Retrieves the content of the current post.
+get_the_content($more_link_text = null, $strip_teaser = false);
+?>
+```
+**Description:** Retrieves the content of the current post.  
 **Parameters:**  
 - `$more_link_text` (string|null) Optional. Content for when there is more text. Default null.  
 - `$strip_teaser` (bool) Optional. Whether to strip the teaser content before the more text. Default false.  
 
+---
+
 ## wp_nav_menu($args = [])
+
+```php
+<?php
+// Displays a navigation menu.
+wp_nav_menu($args = []);
+?>
+```
 **Description:** Displays a navigation menu.  
 **Parameters:**  
 - `$args` (array) Optional. Array of arguments for displaying the navigation menu. Default empty array.  
 
+---
+
 ## get_search_query($escaped = true)
+
+```php
+<?php
+// Retrieves the contents of the search query variable.
+get_search_query($escaped = true);
+?>
+```
 **Description:** Retrieves the contents of the search query variable.  
 **Parameters:**  
 - `$escaped` (bool) Optional. Whether to escape the search query. Default true.  
 
+---
+
 ## is_user_logged_in()
+
+```php
+<?php
+// Checks if the current visitor is a logged-in user.
+is_user_logged_in();
+?>
+```
 **Description:** Checks if the current visitor is a logged-in user.  
 **Parameters:** None  
 
+---
+
 ## wp_logout()
-**Description:** Logs the current user out.  
+
+```php
+<?php
+// Logs the current user out.
+wp_logout();
+?>
+```
+**Description:** Logs the current
+
+ user out.  
 **Parameters:** None  
 
+---
+
 ## wp_login_url($redirect = '', $force_reauth = false)
+
+```php
+<?php
+// Retrieves the login URL.
+wp_login_url($redirect = '', $force_reauth = false);
+?>
+```
 **Description:** Retrieves the login URL.  
 **Parameters:**  
 - `$redirect` (string) Optional. URL to redirect to after logging in. Default ''.  
 - `$force_reauth` (bool) Optional. Whether to force reauthorization. Default false.  
 
+---
+
 ## wp_logout_url($redirect = '')
+
+```php
+<?php
+// Retrieves the logout URL.
+wp_logout_url($redirect = '');
+?>
+```
 **Description:** Retrieves the logout URL.  
 **Parameters:**  
 - `$redirect` (string) Optional. URL to redirect to after logging out. Default ''.  
 
+---
+
 ## wp_register($before = '', $after = '', $echo = true)
-**Description:** Displays the "Site Admin" link and, if logged out, the "Register" link.  
+
+```php
+<?php
+// Displays the "Site Admin" and "Register" links.
+wp_register($before = '', $after = '', $echo = true);
+?>
+```
+**Description:** Displays the "Site Admin" and "Register" links.  
 **Parameters:**  
 - `$before` (string) Optional. Text to display before the links. Default ''.  
 - `$after` (string) Optional. Text to display after the links. Default ''.  
 - `$echo` (bool) Optional. Whether to display or return. Default true.  
 
+---
+
 ## wp_tag_cloud($args = '')
+
+```php
+<?php
+// Displays a tag cloud.
+wp_tag_cloud($args = '');
+?>
+```
 **Description:** Displays a tag cloud.  
 **Parameters:**  
 - `$args` (array|string) Optional. Arguments to display the tag cloud. Default empty string.  
