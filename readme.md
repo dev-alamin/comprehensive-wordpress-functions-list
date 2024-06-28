@@ -7,17 +7,16 @@ This repository contains a collection of the most frequently used WordPress func
 Browse the categories to find the functions you need. Each category contains a set of functions with descriptions, usage examples, and best practices.
 
 ## Categories
-- [General Functions](categories/general-functions.md)
-- [Validation Functions](categories/validation-functions.md)
-- [Filters](categories/filters.md)
-- [Actions](categories/actions.md)
-- [Shortcodes](categories/shortcodes.md)
-- [Custom Post Types](categories/custom-post-types.md)
-- [Security Functions](categories/security-functions.md)
-- [Database Functions](categories/database-functions.md)
-- [API Functions](categories/api-functions.md)
+- [General Functions](#general-functions)
+- [Validation Functions](#validation-functions)
+- [Filters](#filters)
+- [Actions](#actions)
+- [Custom Post Types](#custom-post-types)
+- [Security Functions](#security-functions)
+- [Database Functions](#database-functions)
+- [API Functions](#api-functions)
 
-### categories/general-functions.md
+### general-functions.md
 
 # General Functions
 
@@ -167,7 +166,7 @@ Browse the categories to find the functions you need. Each category contains a s
 **Parameters:**  
 - `$args` (array|string) Optional. Arguments to display the tag cloud. Default empty string.  
 
-### categories/validation-functions.md
+### validation-functions.md
 
 # Validation Functions
 
@@ -271,7 +270,7 @@ Browse the categories to find the functions you need. Each category contains a s
 **Parameters:**  
 - `$value` (mixed) Value to validate.
 
-### categories/filters.md
+### filters.md
 
 # Filters
 
@@ -426,7 +425,7 @@ Browse the categories to find the functions you need. Each category contains a s
 - `$term_links` (array) An array of term links.  
 - `$taxonomy` (string) Taxonomy name.  
 
-### categories/actions.md
+### actions.md
 
 # Actions
 
@@ -647,7 +646,7 @@ Browse the categories to find the functions you need. Each category contains a s
 - `$post` (WP_Post) Post object.  
 - `$update` (bool) Whether this is an existing post being updated.
 
-### categories/custom-post-types.md
+### custom-post-types.md
 
 # Custom Post Types
 
@@ -743,7 +742,7 @@ Browse the categories to find the functions you need. Each category contains a s
 
 Sure, here is a list of commonly used security functions in WordPress along with their descriptions and parameters:
 
-### categories/security-functions.md
+### security-functions.md
 
 # Security Functions
 
@@ -895,7 +894,7 @@ Sure, here is a list of commonly used security functions in WordPress along with
 - `$url` (string) URL to request.  
 - `$args` (array) Optional. Request arguments. Default empty array.  
 
-### categories/database-functions.md
+### database-functions.md
 
 # Database Functions
 
@@ -1006,7 +1005,7 @@ Sure, here is a list of commonly used security functions in WordPress along with
 **Description:** The result set of the last query executed.  
 **Parameters:** None  
 
-### categories/api-functions.md
+### api-functions.md
 
 # API Functions
 
