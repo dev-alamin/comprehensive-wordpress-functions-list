@@ -17,18 +17,13 @@ Browse the categories to find the functions you need. Each category contains a s
 - [API Functions](#api-functions)
 
 ### general-functions.md
-
-# General Functions
-Certainly! Here's how you can format your markdown file to present each function as a code block with its description and parameters:
+Got it! Here's how you can present each function as a code block without the PHP start and ending tags:
 
 ```markdown
 ## get_template_directory()
 
 ```php
-<?php
-// Retrieves the absolute path to the template directory.
 get_template_directory();
-?>
 ```
 **Description:** Retrieves the absolute path to the template directory.  
 **Parameters:** None  
@@ -38,10 +33,7 @@ get_template_directory();
 ## get_stylesheet_directory()
 
 ```php
-<?php
-// Retrieves the absolute path to the stylesheet directory.
 get_stylesheet_directory();
-?>
 ```
 **Description:** Retrieves the absolute path to the stylesheet directory.  
 **Parameters:** None  
@@ -51,10 +43,7 @@ get_stylesheet_directory();
 ## get_template_directory_uri()
 
 ```php
-<?php
-// Retrieves the URI of the template directory.
 get_template_directory_uri();
-?>
 ```
 **Description:** Retrieves the URI of the template directory.  
 **Parameters:** None  
@@ -64,10 +53,7 @@ get_template_directory_uri();
 ## get_stylesheet_directory_uri()
 
 ```php
-<?php
-// Retrieves the URI of the stylesheet directory.
 get_stylesheet_directory_uri();
-?>
 ```
 **Description:** Retrieves the URI of the stylesheet directory.  
 **Parameters:** None  
@@ -77,10 +63,7 @@ get_stylesheet_directory_uri();
 ## get_home_url($blog_id = null, $path = '', $scheme = null)
 
 ```php
-<?php
-// Retrieves the home URL for the current site.
 get_home_url($blog_id = null, $path = '', $scheme = null);
-?>
 ```
 **Description:** Retrieves the home URL for the current site.  
 **Parameters:**  
@@ -93,10 +76,7 @@ get_home_url($blog_id = null, $path = '', $scheme = null);
 ## get_site_url($blog_id = null, $path = '', $scheme = null)
 
 ```php
-<?php
-// Retrieves the site URL for the current site.
 get_site_url($blog_id = null, $path = '', $scheme = null);
-?>
 ```
 **Description:** Retrieves the site URL for the current site.  
 **Parameters:**  
@@ -109,10 +89,7 @@ get_site_url($blog_id = null, $path = '', $scheme = null);
 ## get_admin_url($blog_id = null, $path = '', $scheme = 'admin')
 
 ```php
-<?php
-// Retrieves the admin URL for the current site.
 get_admin_url($blog_id = null, $path = '', $scheme = 'admin');
-?>
 ```
 **Description:** Retrieves the admin URL for the current site.  
 **Parameters:**  
@@ -125,10 +102,7 @@ get_admin_url($blog_id = null, $path = '', $scheme = 'admin');
 ## site_url($path = '', $scheme = null)
 
 ```php
-<?php
-// Retrieves the site URL.
 site_url($path = '', $scheme = null);
-?>
 ```
 **Description:** Retrieves the site URL.  
 **Parameters:**  
@@ -140,10 +114,7 @@ site_url($path = '', $scheme = null);
 ## home_url($path = '', $scheme = null)
 
 ```php
-<?php
-// Retrieves the home URL.
 home_url($path = '', $scheme = null);
-?>
 ```
 **Description:** Retrieves the home URL.  
 **Parameters:**  
@@ -155,10 +126,7 @@ home_url($path = '', $scheme = null);
 ## admin_url($path = '', $scheme = 'admin')
 
 ```php
-<?php
-// Retrieves the admin URL.
 admin_url($path = '', $scheme = 'admin');
-?>
 ```
 **Description:** Retrieves the admin URL.  
 **Parameters:**  
@@ -170,10 +138,7 @@ admin_url($path = '', $scheme = 'admin');
 ## includes_url($path = '', $scheme = null)
 
 ```php
-<?php
-// Retrieves the URL to the includes directory.
 includes_url($path = '', $scheme = null);
-?>
 ```
 **Description:** Retrieves the URL to the includes directory.  
 **Parameters:**  
@@ -185,10 +150,7 @@ includes_url($path = '', $scheme = null);
 ## content_url($path = '')
 
 ```php
-<?php
-// Retrieves the URL to the content directory.
 content_url($path = '');
-?>
 ```
 **Description:** Retrieves the URL to the content directory.  
 **Parameters:**  
@@ -199,10 +161,7 @@ content_url($path = '');
 ## plugins_url($path = '', $plugin = '')
 
 ```php
-<?php
-// Retrieves the URL to the plugins directory or to a specific plugin.
 plugins_url($path = '', $plugin = '');
-?>
 ```
 **Description:** Retrieves the URL to the plugins directory or to a specific plugin.  
 **Parameters:**  
@@ -214,10 +173,7 @@ plugins_url($path = '', $plugin = '');
 ## wp_upload_dir($time = null, $create_dir = true, $refresh_cache = false)
 
 ```php
-<?php
-// Retrieves an array containing the current upload directory's path and URL.
 wp_upload_dir($time = null, $create_dir = true, $refresh_cache = false);
-?>
 ```
 **Description:** Retrieves an array containing the current upload directory's path and URL.  
 **Parameters:**  
@@ -230,10 +186,7 @@ wp_upload_dir($time = null, $create_dir = true, $refresh_cache = false);
 ## get_the_ID()
 
 ```php
-<?php
-// Retrieves the ID of the current item in the WordPress Loop.
 get_the_ID();
-?>
 ```
 **Description:** Retrieves the ID of the current item in the WordPress Loop.  
 **Parameters:** None  
@@ -243,10 +196,7 @@ get_the_ID();
 ## get_the_title($post = 0)
 
 ```php
-<?php
-// Retrieves the title of a specified post.
 get_the_title($post = 0);
-?>
 ```
 **Description:** Retrieves the title of a specified post.  
 **Parameters:**  
@@ -257,10 +207,7 @@ get_the_title($post = 0);
 ## get_the_permalink($post = 0)
 
 ```php
-<?php
-// Retrieves the permalink for a specified post.
 get_the_permalink($post = 0);
-?>
 ```
 **Description:** Retrieves the permalink for a specified post.  
 **Parameters:**  
@@ -271,10 +218,7 @@ get_the_permalink($post = 0);
 ## the_content($more_link_text = null, $strip_teaser = false)
 
 ```php
-<?php
-// Displays the content of the current post.
 the_content($more_link_text = null, $strip_teaser = false);
-?>
 ```
 **Description:** Displays the content of the current post.  
 **Parameters:**  
@@ -286,10 +230,7 @@ the_content($more_link_text = null, $strip_teaser = false);
 ## get_the_content($more_link_text = null, $strip_teaser = false)
 
 ```php
-<?php
-// Retrieves the content of the current post.
 get_the_content($more_link_text = null, $strip_teaser = false);
-?>
 ```
 **Description:** Retrieves the content of the current post.  
 **Parameters:**  
@@ -301,10 +242,7 @@ get_the_content($more_link_text = null, $strip_teaser = false);
 ## wp_nav_menu($args = [])
 
 ```php
-<?php
-// Displays a navigation menu.
 wp_nav_menu($args = []);
-?>
 ```
 **Description:** Displays a navigation menu.  
 **Parameters:**  
@@ -315,10 +253,7 @@ wp_nav_menu($args = []);
 ## get_search_query($escaped = true)
 
 ```php
-<?php
-// Retrieves the contents of the search query variable.
 get_search_query($escaped = true);
-?>
 ```
 **Description:** Retrieves the contents of the search query variable.  
 **Parameters:**  
@@ -329,10 +264,7 @@ get_search_query($escaped = true);
 ## is_user_logged_in()
 
 ```php
-<?php
-// Checks if the current visitor is a logged-in user.
 is_user_logged_in();
-?>
 ```
 **Description:** Checks if the current visitor is a logged-in user.  
 **Parameters:** None  
@@ -342,14 +274,9 @@ is_user_logged_in();
 ## wp_logout()
 
 ```php
-<?php
-// Logs the current user out.
 wp_logout();
-?>
 ```
-**Description:** Logs the current
-
- user out.  
+**Description:** Logs the current user out.  
 **Parameters:** None  
 
 ---
@@ -357,10 +284,7 @@ wp_logout();
 ## wp_login_url($redirect = '', $force_reauth = false)
 
 ```php
-<?php
-// Retrieves the login URL.
 wp_login_url($redirect = '', $force_reauth = false);
-?>
 ```
 **Description:** Retrieves the login URL.  
 **Parameters:**  
@@ -372,10 +296,7 @@ wp_login_url($redirect = '', $force_reauth = false);
 ## wp_logout_url($redirect = '')
 
 ```php
-<?php
-// Retrieves the logout URL.
 wp_logout_url($redirect = '');
-?>
 ```
 **Description:** Retrieves the logout URL.  
 **Parameters:**  
@@ -386,10 +307,7 @@ wp_logout_url($redirect = '');
 ## wp_register($before = '', $after = '', $echo = true)
 
 ```php
-<?php
-// Displays the "Site Admin" and "Register" links.
 wp_register($before = '', $after = '', $echo = true);
-?>
 ```
 **Description:** Displays the "Site Admin" and "Register" links.  
 **Parameters:**  
@@ -402,170 +320,332 @@ wp_register($before = '', $after = '', $echo = true);
 ## wp_tag_cloud($args = '')
 
 ```php
-<?php
-// Displays a tag cloud.
 wp_tag_cloud($args = '');
-?>
 ```
 **Description:** Displays a tag cloud.  
 **Parameters:**  
-- `$args` (array|string) Optional. Arguments to display the tag cloud. Default empty string.  
+- `$args` (array|string) Optional.
 
-### validation-functions.md
+ Arguments to display the tag cloud. Default empty string.  
 
-# Validation Functions
+### validation-functions
 
+```markdown
 ## is_email($email)
+
+```php
+is_email($email);
+```
 **Description:** Validates an email address.  
 **Parameters:**  
 - `$email` (string) Email address to validate.  
 
+---
+
 ## is_user_logged_in()
+
+```php
+is_user_logged_in();
+```
 **Description:** Checks if the current visitor is a logged-in user.  
 **Parameters:** None  
 
+---
+
 ## is_admin()
+
+```php
+is_admin();
+```
 **Description:** Checks if the current request is for an administrative interface page.  
 **Parameters:** None  
 
+---
+
 ## current_user_can($capability)
+
+```php
+current_user_can($capability);
+```
 **Description:** Checks if the current user has a specific capability.  
 **Parameters:**  
 - `$capability` (string) Capability to check.  
 
+---
+
 ## wp_verify_nonce($nonce, $action = -1)
+
+```php
+wp_verify_nonce($nonce, $action = -1);
+```
 **Description:** Verifies that a nonce is correct and unexpired.  
 **Parameters:**  
 - `$nonce` (string) Nonce to verify.  
 - `$action` (int|string) Optional. The action name. Default -1.  
 
+---
+
 ## check_admin_referer($action = -1, $query_arg = '_wpnonce')
-**Description:** Verifies the AJAX request to prevent processing requests external of the blog.  
+
+```php
+check_admin_referer($action = -1, $query_arg = '_wpnonce');
+```
+**Description:** Verifies the AJAX request to prevent processing requests external to the blog.  
 **Parameters:**  
 - `$action` (int|string) Optional. Action nonce. Default -1.  
 - `$query_arg` (string) Optional. Nonce query parameter. Default '_wpnonce'.  
 
+---
+
 ## check_ajax_referer($action = -1, $query_arg = false, $die = true)
-**Description:** Verifies the AJAX request to prevent processing requests external of the blog.  
+
+```php
+check_ajax_referer($action = -1, $query_arg = false, $die = true);
+```
+**Description:** Verifies the AJAX request to prevent processing requests external to the blog.  
 **Parameters:**  
 - `$action` (int|string) Optional. Action nonce. Default -1.  
 - `$query_arg` (false|string) Optional. Key to check for the nonce. Default false.  
 - `$die` (bool) Optional. Whether to die if the nonce is invalid. Default true.  
 
+---
+
 ## current_user_can_for_blog($blog_id, $capability)
+
+```php
+current_user_can_for_blog($blog_id, $capability);
+```
 **Description:** Checks if the current user has a specific capability for a given site.  
 **Parameters:**  
 - `$blog_id` (int) Site ID.  
 - `$capability` (string) Capability to check.  
 
+---
+
 ## has_cap($capability)
+
+```php
+has_cap($capability);
+```
 **Description:** Checks if the user has a specific capability.  
 **Parameters:**  
 - `$capability` (string) Capability to check.  
 
+---
+
 ## validate_file($file, $allowed_files = [])
+
+```php
+validate_file($file, $allowed_files = []);
+```
 **Description:** Validates a file name and path for security reasons.  
 **Parameters:**  
 - `$file` (string) File path.  
 - `$allowed_files` (array) Optional. List of allowed files. Default empty array.  
 
+---
+
 ## wp_validate_auth_cookie($cookie = '', $scheme = '')
+
+```php
+wp_validate_auth_cookie($cookie = '', $scheme = '');
+```
 **Description:** Validates authentication cookies.  
 **Parameters:**  
 - `$cookie` (string) Optional. If specified, will validate the specified cookie. Default ''.  
 - `$scheme` (string) Optional. Authentication scheme. Default ''.  
 
+---
+
 ## wp_validate_redirect($location, $default = '')
+
+```php
+wp_validate_redirect($location, $default = '');
+```
 **Description:** Validates a URL for use in a redirect.  
 **Parameters:**  
 - `$location` (string) The URL to validate.  
 - `$default` (string) Optional. Default URL to return if `$location` is not valid. Default ''.  
 
+---
+
 ## validate_username($username)
+
+```php
+validate_username($username);
+```
 **Description:** Validates a username.  
 **Parameters:**  
 - `$username` (string) Username to validate.  
 
+---
+
 ## is_serialized($data, $strict = true)
+
+```php
+is_serialized($data, $strict = true);
+```
 **Description:** Checks if data is serialized.  
 **Parameters:**  
 - `$data` (mixed) Data to check.  
 - `$strict` (bool) Optional. Whether to be strict about the end of the string. Default true.  
 
+---
+
 ## is_serialized_string($data)
+
+```php
+is_serialized_string($data);
+```
 **Description:** Checks if a string is serialized.  
 **Parameters:**  
 - `$data` (string) String to check.  
 
+---
+
 ## is_ssl()
+
+```php
+is_ssl();
+```
 **Description:** Determines if SSL is used.  
 **Parameters:** None  
 
+---
+
 ## is_multisite()
+
+```php
+is_multisite();
+```
 **Description:** Determines if Multisite is enabled.  
 **Parameters:** None  
 
+---
+
 ## is_main_site($site_id = null)
+
+```php
+is_main_site($site_id = null);
+```
 **Description:** Determines if the current site is the main site.  
 **Parameters:**  
 - `$site_id` (int|null) Optional. Site ID to check. Default null.  
 
+---
+
 ## wp_validate_boolean($value)
+
+```php
+wp_validate_boolean($value);
+```
 **Description:** Validates a boolean variable.  
 **Parameters:**  
 - `$value` (mixed) Value to validate.
+```
 
-### filters.md
+### filters
 
-# Filters
-
+```markdown
 ## the_title
+
+```php
+the_title($title, $id);
+```
 **Description:** Filters the post title.  
 **Parameters:**  
 - `$title` (string) The post title.  
 - `$id` (int) The post ID.  
 
+---
+
 ## the_content
+
+```php
+the_content($content);
+```
 **Description:** Filters the post content.  
 **Parameters:**  
 - `$content` (string) The post content.  
 
+---
+
 ## the_excerpt
+
+```php
+the_excerpt($excerpt);
+```
 **Description:** Filters the post excerpt.  
 **Parameters:**  
 - `$excerpt` (string) The post excerpt.  
 
+---
+
 ## wp_title
+
+```php
+wp_title($title, $sep, $seplocation);
+```
 **Description:** Filters the text of the page title.  
 **Parameters:**  
 - `$title` (string) The page title.  
 - `$sep` (string) The separator.  
 - `$seplocation` (string) The location of the separator (left or right).  
 
+---
+
 ## wp_nav_menu_items
+
+```php
+wp_nav_menu_items($items, $args);
+```
 **Description:** Filters the HTML list content for navigation menus.  
 **Parameters:**  
 - `$items` (string) The HTML list content for the menu items.  
 - `$args` (object) An object containing wp_nav_menu() arguments.  
 
+---
+
 ## wp_list_pages
+
+```php
+wp_list_pages($output, $args);
+```
 **Description:** Filters the HTML output of list pages.  
 **Parameters:**  
 - `$output` (string) The HTML output of list pages.  
 - `$args` (array) An array of arguments.  
 
+---
+
 ## the_author
+
+```php
+the_author($display_name);
+```
 **Description:** Filters the display name of the author.  
 **Parameters:**  
 - `$display_name` (string) The author's display name.  
 
+---
+
 ## comment_text
+
+```php
+comment_text($comment_text, $comment);
+```
 **Description:** Filters the comment text.  
 **Parameters:**  
 - `$comment_text` (string) The comment text.  
 - `$comment` (WP_Comment) The comment object.  
 
+---
+
 ## get_avatar
+
+```php
+get_avatar($avatar, $id_or_email, $size, $default, $alt);
+```
 **Description:** Filters the avatar.  
 **Parameters:**  
 - `$avatar` (string) The avatar image tag.  
@@ -574,47 +654,95 @@ wp_tag_cloud($args = '');
 - `$default` (string) URL to a default image to use if no avatar is available.  
 - `$alt` (string) Alternative text to use in the avatar image tag.  
 
+---
+
 ## get_search_form
+
+```php
+get_search_form($form);
+```
 **Description:** Filters the search form HTML.  
 **Parameters:**  
 - `$form` (string) The search form HTML output.  
 
+---
+
 ## the_date
+
+```php
+the_date($the_date, $d, $post);
+```
 **Description:** Filters the date a post was published.  
 **Parameters:**  
 - `$the_date` (string) The formatted date.  
 - `$d` (string) The date format.  
 - `$post` (WP_Post) The post object.  
 
+---
+
 ## the_time
+
+```php
+the_time($the_time, $d, $post);
+```
 **Description:** Filters the time a post was published.  
 **Parameters:**  
 - `$the_time` (string) The formatted time.  
 - `$d` (string) The time format.  
 - `$post` (WP_Post) The post object.  
 
+---
+
 ## bloginfo
+
+```php
+bloginfo($output, $show);
+```
 **Description:** Filters the output of blog information.  
 **Parameters:**  
 - `$output` (string) The blog information.  
 - `$show` (string) The type of information to retrieve.  
 
+---
+
 ## wp_mail_from
+
+```php
+wp_mail_from($from_email);
+```
 **Description:** Filters the email address to send from.  
 **Parameters:**  
 - `$from_email` (string) The email address.  
 
+---
+
 ## wp_mail_from_name
+
+```php
+wp_mail_from_name($from_name);
+```
 **Description:** Filters the name to associate with the "from" email address.  
 **Parameters:**  
 - `$from_name` (string) The name associated with the "from" email address.  
 
+---
+
 ## pre_get_posts
+
+```php
+pre_get_posts($query);
+```
 **Description:** Allows altering the main query before it is executed.  
 **Parameters:**  
 - `$query` (WP_Query) The WP_Query instance (passed by reference).  
 
+---
+
 ## wp_get_attachment_image_src
+
+```php
+wp_get_attachment_image_src($image, $attachment_id, $size, $icon);
+```
 **Description:** Filters the image src result.  
 **Parameters:**  
 - `$image` (array|false) The image src result array or false if no image is available.  
@@ -622,14 +750,26 @@ wp_tag_cloud($args = '');
 - `$size` (string|array) Size of image.  
 - `$icon` (bool) Whether the image should be treated as an icon.  
 
+---
+
 ## the_category
+
+```php
+the_category($thelist, $separator, $parents);
+```
 **Description:** Filters the list of categories for a post.  
 **Parameters:**  
 - `$thelist` (string) List of categories.  
 - `$separator` (string) Separator used between categories.  
 - `$parents` (string) How to display category parents.  
 
+---
+
 ## the_tags
+
+```php
+the_tags($tag_list, $before, $sep, $after);
+```
 **Description:** Filters the list of tags for a post.  
 **Parameters:**  
 - `$tag_list` (string) List of tags.  
@@ -637,40 +777,77 @@ wp_tag_cloud($args = '');
 - `$sep` (string) Separator used between tags.  
 - `$after` (string) String to use after tags.  
 
+---
+
 ## excerpt_length
+
+```php
+excerpt_length($length);
+```
 **Description:** Filters the length of the excerpt.  
 **Parameters:**  
 - `$length` (int) The number of words in the excerpt.  
 
+---
+
 ## excerpt_more
+
+```php
+excerpt_more($more);
+```
 **Description:** Filters the "read more" excerpt string.  
 **Parameters:**  
 - `$more` (string) The string shown within the more link.  
 
+---
+
 ## upload_mimes
+
+```php
+upload_mimes($mimes);
+```
 **Description:** Filters the list of allowed mime types and file extensions.  
 **Parameters:**  
 - `$mimes` (array) Mime types keyed by the file extension regex corresponding to those types.  
 
+---
+
 ## widget_text
+
+```php
+widget_text($text, $instance);
+```
 **Description:** Filters the content of the text widget.  
 **Parameters:**  
 - `$text` (string) The widget content.  
 - `$instance` (array) The current widget instance's settings.  
 
+---
+
 ## wp_generate_attachment_metadata
+
+```php
+wp_generate_attachment_metadata($metadata, $attachment_id);
+```
 **Description:** Filters the attachment meta data.  
 **Parameters:**  
 - `$metadata` (array) An array of attachment meta data.  
 - `$attachment_id` (int) Current attachment ID.  
 
+---
+
 ## term_links-post_tag
+
+```php
+term_links-post_tag($term_links, $taxonomy);
+```
 **Description:** Filters the term links for the post tags.  
 **Parameters:**  
 - `$term_links` (array) An array of term links.  
-- `$taxonomy` (string) Taxonomy name.  
+- `$taxonomy` (string) Taxonomy name.
 
-### actions.md
+
+### actions
 
 # Actions
 
