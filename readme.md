@@ -18,6 +18,64 @@ Browse the categories to find the functions you need. Each category contains a s
 | `esc_attr()`                 | Escapes text for use in an HTML attribute.                                                      | `$text` (string)                     |
 | `esc_url()`                  | Escapes a URL for use in HTML attributes or redirects.                                          | `$url` (string)                      |
 | `current_time()`             | Retrieves the current time based on specified type.                                              | `$type` (string), `$gmt` (bool)      |
+| `get_sidebar()`              | Loads the sidebar template.                                                                     | `$name` (string)                     |
+| `get_search_form()`          | Retrieves the search form HTML.                                                                 | None                                 |
+| `bloginfo()`                 | Retrieves information about the current site.                                                   | `$show` (string)                     |
+| `get_theme_mod()`            | Retrieves theme modification value for the current theme.                                        | `$name` (string), `$default` (mixed) |
+| `the_post_thumbnail()`       | Displays the post thumbnail.                                                                    | `$size` (string|array), `$attr` (string|array) |
+| `has_post_thumbnail()`       | Checks if a post has a post thumbnail.                                                          | `$post` (int|WP_Post|null)          |
+| `post_class()`               | Displays the classes for the post element.                                                       | `$class` (string|array)             |
+| `body_class()`               | Displays the classes for the body element.                                                       | `$class` (string|array)             |
+| `wp_title()`                 | Displays or retrieves the page title with optional separator.                                    | `$sep` (string), `$display` (bool)  |
+| `the_title_attribute()`      | Displays or retrieves the title attribute for the current post.                                  | None                                 |
+| `get_the_title()`            | Retrieves the post title.                                                                       | `$post` (int|WP_Post|null)          |
+| `get_the_excerpt()`          | Retrieves the post excerpt.                                                                     | `$post` (int|WP_Post|null)          |
+| `the_excerpt()`              | Displays the post excerpt.                                                                      | None                                 |
+| `the_content()`              | Displays the post content.                                                                      | None                                 |
+| `get_the_content()`          | Retrieves the post content.                                                                     | `$more_link_text` (string), `$strip_teaser` (bool) |
+| `the_permalink()`            | Retrieves the permalink for the current post.                                                    | `$post` (int|WP_Post|null)          |
+| `the_author_posts_link()`    | Displays the author of the current post with a link to their archive.                            | None                                 |
+| `comments_template()`        | Loads the comment template for the current post.                                                 | `$file` (string)                    |
+| `comment_form()`             | Outputs the comment form.                                                                       | `$args` (array)                     |
+| `wp_list_comments()`         | Outputs a list of comments.                                                                     | `$args` (array)                     |
+| `paginate_comments_links()`  | Retrieves the pagination for comments.                                                          | `$args` (array)                     |
+| `get_comment_pages_count()`  | Retrieves the total number of comment pages for a post.                                          | `$post_id` (int)                    |
+| `get_comment_link()`         | Retrieves the link to a specific comment.                                                        | `$comment` (WP_Comment)             |
+| `get_comment_author_link()`  | Retrieves the link to the author of a comment.                                                   | `$comment` (WP_Comment)             |
+| `get_comment_date()`         | Retrieves the date of a comment.                                                                | `$d` (string), `$comment` (WP_Comment) |
+| `get_comment_text()`         | Retrieves the text of a comment.                                                                | `$comment` (WP_Comment), `$args` (array) |
+| `get_avatar()`               | Retrieves the avatar for a user.                                                                | `$id_or_email` (mixed), `$size` (int|string|array), `$default` (string), `$alt` (string|array) |
+| `the_category()`             | Displays or retrieves the categories of the post.                                                | `$separator` (string), `$parents` (string) |
+| `the_tags()`                 | Displays or retrieves the tags of the post.                                                      | `$before` (string), `$sep` (string), `$after` (string) |
+| `get_the_tag_list()`         | Retrieves the tags of the post as a formatted string.                                            | `$before` (string), `$sep` (string), `$after` (string) |
+| `the_time()`                 | Displays or retrieves the time of the current post.                                              | `$d` (string), `$post` (WP_Post)     |
+| `the_date()`                 | Displays or retrieves the date of the current post.                                              | `$d` (string), `$post` (WP_Post)     |
+| `get_permalink()`            | Retrieves the permalink for the current post.                                                    | `$post` (int|WP_Post|null)          |
+| `get_avatar()`               | Retrieves the avatar for a user.                                                                | `$id_or_email` (mixed), `$size` (int|string|array), `$default` (string), `$alt` (string|array) |
+| `wp_get_attachment_image()`  | Retrieves an image tag for a given attachment ID.                                                | `$attachment_id` (int), `$size` (string|array), `$icon` (bool) |
+| `wp_get_attachment_image_src()` | Retrieves the image source data for a given attachment ID.                                      | `$attachment_id` (int), `$size` (string|array), `$icon` (bool) |
+| `wp_get_attachment_caption()` | Retrieves the caption for a given attachment ID.                                                 | `$attachment_id` (int)              |
+| `wp_kses_post()`             | Sanitizes content for allowed HTML tags for post content.                                        | `$data` (string)                    |
+| `sanitize_text_field()`      | Sanitizes a string from user input or from the database.                                         | `$str` (string)                     |
+| `wp_kses()`                  | Sanitizes content for allowed HTML tags and attributes.                                          | `$data` (string|array), `$allowed_html` (array) |
+| `sanitize_key()`             | Sanitizes a string key for use as a slug, option name, etc.                                      | `$key` (string)                     |
+| `sanitize_title()`           | Sanitizes a string into a slug, typically for URLs.                                              | `$title` (string), `$fallback_title` (string), `$context` (string) |
+| `sanitize_title_with_dashes()` | Sanitizes a string into a slug with hyphens.                                                    | `$title` (string), `$raw_title` (string), `$context` (string) |
+| `sanitize_html_class()`      | Sanitizes an HTML class attribute value.                                                         | `$class` (string)                   |
+| `sanitize_user()`            | Sanitizes a username, stripping out unsafe characters.                                           | `$username` (string), `$strict` (bool) |
+| `wp_kses_data()`             | Sanitizes content for allowed HTML tags for data.                                                | `$data` (string)                    |
+| `esc_textarea()`             | Escapes a textarea for safe output.                                                              | `$text` (string)                     |
+| `wp_check_password()`        | Checks the plaintext password against the encrypted Password.                                   | `$password` (string), `$hash` (string), `$user_id` (int|null) |
+| `wp_set_auth_cookie()`       | Sets the authentication cookies based on user ID.                                               | `$user_id` (int), `$remember` (bool), `$secure` (bool) |
+| `wp_generate_password()`     | Generates a random password.                                                                    | `$length` (int), `$special_chars` (bool), `$extra_special_chars` (bool) |
+| `wp_hash_password()`         | Hashes a password.                                                                             | `$password` (string)                |
+| `wp_check_password()`        | Checks the plaintext password against the encrypted Password.                                   | `$password` (string), `$hash` (string), `$user_id` (int|null) |
+| `is_email()`                 | Checks if the email address is valid.                                                           | `$email` (string)                   |
+| `sanitize_email()`           | Sanitizes an email address.                                                                    | `$email` (string)                   |
+| `is_wp_error()`              | Checks if a variable is a WP_Error object.                                                      | `$thing` (mixed)                    |
+| `wp_parse_args()`            | Merge user defined arguments into defaults array.                                                | `$args` (mixed
+
+
 | **Sanitization Functions**   |                                                                                                 |                                      |
 | `esc_html()`                 | Escapes HTML for safe output.                                                                    | `$text` (string)                     |
 | `esc_attr()`                 | Escapes an attribute value for safe output.                                                      | `$text` (string)                     |
